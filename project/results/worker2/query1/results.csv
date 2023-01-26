@@ -1,2 +1,0 @@
-Pickup_datetime,Dropoff_datetime,Pickup_zone,Dropoff_zone,Trip_distance,Total_amount,Tip_amount
-2022-03-17T12:27:47.000+02:00,2022-03-17T12:27:58.000+02:00,Battery Park,Battery Park,0.0,45.8,40.0

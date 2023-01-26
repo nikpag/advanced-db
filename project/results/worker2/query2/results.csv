@@ -1,8 +1,0 @@
-Month,Pickup_zone,Dropoff_zone,Tolls_amount,Pickup_datetime,Dropoff_datetime,Trip_distance,Total_amount,Tip_amount
-1,JFK Airport,Schuylerville/Edgewater Park,82.45,2022-01-18T23:51:55.000+02:00,2022-01-19T00:16:19.000+02:00,16.79,129.25,0.0
-2,TriBeCa/Civic Center,TriBeCa/Civic Center,77.0,2022-02-23T22:09:57.000+02:00,2022-02-23T22:10:07.000+02:00,0.0,132.3,0.0
-3,Midtown East,Sutton Place/Turtle Bay North,139.0,2022-03-26T05:02:51.000+02:00,2022-03-26T05:03:45.000+02:00,0.1,145.3,0.0
-4,West Village,West Village,911.87,2022-04-29T04:31:21.000+03:00,2022-04-29T04:32:30.000+03:00,0.0,918.67,0.0
-5,Upper West Side South,West Chelsea/Hudson Yards,813.75,2022-05-21T16:47:48.000+03:00,2022-05-21T17:05:47.000+03:00,2.4,845.55,0.0
-6,Financial District North,Financial District North,77.0,2022-06-23T20:43:16.000+03:00,2022-06-23T20:48:14.000+03:00,0.6,91.31,0.01
-6,Lincoln Square East,JFK Airport,800.09,2022-06-12T16:51:46.000+03:00,2022-06-12T17:56:48.000+03:00,22.0,870.89,0.0

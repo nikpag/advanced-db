@@ -1,4 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/home/user/project/scala/src/main/scala/Main.scala:25:3: forward reference extends over definition of value tripsDF[0m
-[0m[[0m[31merror[0m] [0m[0m		tripsDF.createOrReplaceTempView("Trips_Dirty")[0m
-[0m[[0m[31merror[0m] [0m[0m		^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
