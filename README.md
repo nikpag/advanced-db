@@ -9,12 +9,12 @@ Project for "Advanced Topics in Database Systems" course @ NTUA (9th semester)
 Στην εργασία, χρησιμοποιήσαμε δύο συστήματα, το Apache Spark (σε cluster mode) και το DFS μέρος των εργαλείων Hadoop.
 Και τα δύο συστήματα εγκαταστάθηκαν και στα δύο μηχανήματα που μας δόθηκαν ως πόροι για την εκτέλεση της εργασίας.
 
-Οι παρακάτω οδηγίες εγκατάστασεις υπάρχουν και σε ξεχωριστά script στον ομώνυμο φάκελο του repository. Παρουσιάζονται και εδώ κυρίως για επεξηγηματικούς λόγους.
+Οι παρακάτω οδηγίες εγκατάστασης υπάρχουν και σε ξεχωριστά scripts στον ομώνυμο φάκελο του repository.
 
-## Apache Installation
+## Apache Spark Installation
 Εκτελούμε τις παρακάτω εντολές και στα 2 μηχανήματα
 
-**Σημείωση**: Στο slave μηχάνημα, δεν χρειάζεται να τρέξουμε τις εντολές που κάνουν set την IP του master node και **ΔΕΝ** πρέπει να τρέξουμε την εντολή ```start-master.sh```. Για την εγκατάσταση του apache στα 2 nodes, υπάρχουν τα scripts ```install_spark_master.sh``` και ```install_spark_slave.sh``` αντίστοιχα.
+**Σημείωση**: Στο slave μηχάνημα, δεν χρειάζεται να τρέξουμε τις εντολές που κάνουν set την IP του master node και **ΔΕΝ** πρέπει να τρέξουμε την εντολή ```start-master.sh```. Για την εγκατάσταση του Apache Spark στα 2 nodes, υπάρχουν τα scripts ```install_spark_master.sh``` και ```install_spark_slave.sh``` αντίστοιχα.
 
 ```bash
 #!/bin/bash
@@ -41,7 +41,7 @@ start-my-workers.sh # Custom script
 ```
 
 ## HDFS Installation
-Η εγκατάσταση του HDFS είναι αρκετά πιο δύσκολη για να αυτοματοποιηθεί με scripts και για αυτό περιγράφουμε συνοπτικά την διαδικασία. [Ακολουθήσαμε αυτό το guide](https://sparkbyexamples.com/hadoop/apache-hadoop-installation/) με πολύ καλό αποτέλεσμα.
+Η εγκατάσταση του HDFS είναι αρκετά πιο δύσκολη για να αυτοματοποιηθεί με scripts και για αυτό περιγράφουμε συνοπτικά την διαδικασία. [Ακολουθήσαμε αυτό το guide](https://sparkbyexamples.com/hadoop/apache-hadoop-installation/) με πολύ καλά αποτελέσματα.
 
 ### Steps for both master and worker node
 ```bash
