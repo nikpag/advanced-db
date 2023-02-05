@@ -59,7 +59,7 @@ scp .ssh/authorized_keys $slaveIP:/home/ubuntu/.ssh/authorized_keys
 <!-- Edit Known Hosts document -->
 sudo vi /etc/hosts
 127.0.0.1       localhost
-192.168.0.1     snf-33420 
+192.168.0.1     snf-33420
 192.168.0.2     snf-33421
 ```
 
@@ -133,17 +133,18 @@ tar -xzf sbt-1.8.2.tgz
 
 Δημιουργούμε νέο Scala Project, με ειδικό template, με την εντολή
 ```bash
-mkdir advDBProject && cd advDBProject
 ~/sbt/bin/sbt new scala/hello-world.g8
 ```
 
-Στο αρχείο ```advDBProject/src/main/scalaMain.scala``` πλέον γράφουμε τον κώδικα του project.
+Στο prompt που θα εμφανιστεί, δίνουμε το όνομα που θέλουμε να έχει το project (στη δική μας περίπτωση είναι το root directory, `advdb-ntua`)
+
+Στο αρχείο ```src/main/scala/Main.scala``` πλέον γράφουμε τον κώδικα του project.
 
 Για να εκτελέσουμε τον κώδικα πρέπει να γίνει compiled και να τοποθετηθεί στο HDFS.
 
 ```bash
 # Build Scala, put jar to hdfs
-cd ~/project/scala/ 
+cd ~/project/scala/
 ~/sbt/bin/sbt package
 hdfs dfs -put -f /home/user/project/scala/target/scala-2.12/$jar /jars/$jar
 ```
@@ -179,7 +180,7 @@ firstResult="/home/user/project/results/first_result"
 secondResult="/home/user/project/results/second_result"
 
 # Build Scala, put jar to hdfs
-cd ~/project/scala/ 
+cd ~/project/scala/
 ~/sbt/bin/sbt package
 hdfs dfs -put -f /home/user/project/scala/target/scala-2.12/$jar /jars/$jar
 
